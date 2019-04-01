@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<title>My first three.js app</title>
+		<script src="three.min.js"></script>
+		<script src="OrbitControls.js"></script>
+		<style>
+			body { margin: 0; background-color : rgb(12, 12, 12);}
+			canvas { width: 100%; height: 100% }
+		</style>
+	</head>
+	<body>
+		<div id = "menubar" style = "float : left; padding : 10px">
+			<p>
+				<h2 style = "color : white"> Choose level of detail </h2>
+				<input type = "number" min = "1" max = "8" size = "100" value = "4" style = "margin-left : 40px; width : 100px" id = "detail" ></input>
+			</p>
+			<p>
+				<h2 style = "color : white"> Perform next step </h2>
+					<button style = "margin-left : 40px; width : 100px" id="change"> Change </button>
+				</h2>
+			</p>
+		</div>
+		<div id = "main" style = "float : left"></div>
+		<script src = "renderer.js"> </script>
+		<script src = "materials.js"> </script>
+		<script src = "axes.js"> </script>
+		<script src = "main.js"> </script>
+	</body>
+</html>
